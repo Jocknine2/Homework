@@ -1,11 +1,11 @@
-number_1 = "28"
-number_2 = 50
-number_3 = 100
+from ast import Continue
 
-print("I am " + number_1 + " years old")
 
-sum=number_3-number_2
+age = 28
 
-sum
-
+if age<=30:
+  print("I'm still young")
+else:
+  print("I'm getting old")
+ 
  
