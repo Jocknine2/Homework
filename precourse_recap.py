@@ -1,10 +1,11 @@
-python3
-number_1 = 28
-number_2 = 36
-number_3 = 11
+number_1 = "28"
+number_2 = 50
+number_3 = 100
 
-sum = number_1 + number_2:
+print("I am " + number_1 + " years old")
 
-sum - number_3
+sum=number_3-number_2
+
+sum
 
  
