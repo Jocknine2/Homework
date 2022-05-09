@@ -80,3 +80,21 @@ def customer_can_afford_pet(customer, new_pet):
         return True
     else:
         return False
+
+
+def sell_pet_to_customer(shop, pet, customer):
+    len(customer["pets"])
+
+    remaining_pets = []
+    bought_pet = []
+
+    for pet in shop["pets"]:
+        if pet["name"] == True:
+            bought_pet.append(pet)
+
+    for pet in shop["pets"]:
+        if pet["name"] == False:
+            remaining_pets.append(pet)
+    shop["pets"] = remaining_pets
+
+    customer["cash"] - pet["cash"]
