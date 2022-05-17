@@ -1,0 +1,38 @@
+body > header { 
+    background-color:dodgerblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:floralwhite;
+    margin: 0%;
+    padding: 16px;
+}
+
+#logo { 
+    margin: 0%;
+    font-family:'Prompt', sans-serif;
+}
+nav > ul {
+    text-align:right;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline;
+    
+}
+nav > ul > li > a {
+    color: floralwhite;
+}
+
+section  { 
+    display: inline;
+    flex-direction: row;
+}
+
+section > ul { 
+    list-style: none;
+}
+
+
+footer > ul {
+    list-style: none;
+}
