@@ -1,0 +1,52 @@
+{% extends "Base.html" %}
+
+{% block content %}
+
+<h2> New Player</h2>
+
+<div>
+    <aside>
+        <form action="/game" method="post">
+            <label for="player">Player Name:</label>
+            <input type="player" id="player_name" name="player_name">
+            <label for="choice">Please select 1</label>
+            <input type="checkbox" id="rock" name="rock">
+            <label for="rock" id="rock" name="rock"></label><br>
+            <input type="checkbox" id="paper" name="paper">
+            <label for="paper" id="paper" name="paper"><br>
+            <input tpye="checkbox" id="scissors" name="scissors">
+            <label for="scissors" id="scissors" name="scissors"></label>
+            <input type="submit" value="Add Player">
+        </form><br>
+    </aside>
+
+    {% for players_input in players %}
+    <div>  
+        <hr>
+        <p>
+        {% if players[0][input] == players[1][input]: %}
+            {% return %}
+                Draw!
+        {% elif %}
+            {% players[0][input] == "rock" %}
+            {% if players[1][input] == "scissors": %}
+            Rock smashes scissors! {%players[0][name]%} Wins!
+        {% else: %}
+            Paper covers rock! {%players[1][name]%} Wins!.
+        {% elif players[0][input] == "paper": %}
+            {% if players[1][input] == "rock": %}
+                Paper covers rock! {%players[0][name]%} Wins!
+        {% else: %}
+                Scissors cuts paper! {%players[1][name]%} Wins!.
+        {& elif players[0][input] == "scissors": %}
+            {% if players[1][input] == "paper": %}
+                Scissors cuts paper! {%players[0][name]%} wins!
+            {% else: %}
+                Rock smashes scissors! {% players[1][name] %} wins!
+    </p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
+        
