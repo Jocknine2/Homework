@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2> Library </h2>
+
+{% for book in all_books %}
+<div>
+    <hr>
+    <p>
+        Title:{{book.title}} Author:{{book.author}}
+
+
+</div>
+{% endblock %}
